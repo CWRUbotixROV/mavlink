@@ -1601,5 +1601,11 @@
       <field type="uint16_t[4]" name="rpm" units="rpm">RPM (eRPM).</field>
       <field type="uint16_t[4]" name="count">count of telemetry packets received (wraps at 65535).</field>
     </message>
+    <message id="11100" name="BABY_ROV_THRUSTER_TOGGLE">
+      <description>Toggle the baby ROV's thruster on or off.</description>
+      <field type="uint8_t" name="target_system">System ID.</field>
+      <field type="uint8_t" name="target_component">Component ID.</field>
+      <field type="uint8_t" name="state">0=off, 1=on.</field>
+    </message>
   </messages>
 </mavlink>
